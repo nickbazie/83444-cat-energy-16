@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Mykola Voloshchuk](https://up.htmlacademy.ru/adaptive/16/user/83444).
-* Наставник: `Неизвестно`.
+* Наставник: Андрей Слесаренко.
 
 ---
 
