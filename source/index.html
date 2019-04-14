@@ -14,9 +14,9 @@
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a>Главная</a></li>
-            <li class="site-list__item"><a href="catalog.html">Каталог продукции</a></li>
-            <li class="site-list__item"><a href="form.html">Подбор программы</a></li>
+            <li class="site-list__item"><a class="main-nav__link">Главная</a></li>
+            <li class="site-list__item"><a class="main-nav__link" href="catalog.html">Каталог продукции</a></li>
+            <li class="site-list__item"><a class="main-nav__link" href="form.html">Подбор программы</a></li>
           </ul>
         </div>
       </nav>
@@ -26,11 +26,10 @@
         <h1 class="about__header">Функциональное питание для котов</h1>
         <p class="about__slogan">Занялся собой? Займись котом!</p>
         <img class="about__product" src="http://placehold.it/280x270" width="280" height="270" alt="Банка Cat Energy - Курица">
-        <a class="about__call-to-action" href="#">Подобрать программу</a>
+        <a class="about__call-to-action btn" href="#">Подобрать программу</a>
       </section>
       <article class="program">
-        <h3 class="program__title">Похудение</h3>
-        <span class="program__icon"><img class="program__icon--loose" src="http://placehold.it/35x49" width="35" height="49" alt=""></span>
+        <h3 class="program__title program__title--loose">Похудение</h3>
         <p class="program__description">
           Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
           Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес
@@ -38,8 +37,7 @@
         <a сlass="program__link" href="#">Каталог SLIM</a>
       </article>
       <article class="program">
-        <h3 class="program__title">Набор массы</h3>
-        <span class="program__icon"><img class="program__icon--gain" src="http://placehold.it/67x28" width="67" height="28" alt=""></span>
+        <h3 class="program__title program__title--gain">Набор массы</h3>
         <p class="program__description">
           Заработать авторитет среди дворовых котов и даже собак?
           Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
@@ -49,20 +47,16 @@
       <section class="about-product">
         <h2 class="about-product__title">Как это работает</h2>
         <ul class="about-product__list site-list">
-          <li class="about-product__list-item">
-            <span class="about-product-icon about-product__icon--leaf"></span>
+          <li class="about-product__list-item about-product__list-item--leaf">
             Функциональное питание содержит только полезные питательные вещества.
           </li>
-          <li class="about-product__list-item">
-            <span class="about-product-icon about-product__icon--water"></span>
+          <li class="about-product__list-item about-product__list-item--water">
             Выпускается в виде порошка, который нужно лишь залить кипятком и готово.
           </li>
-          <li class="about-product__list-item">
-            <span class="about-product-icon about-product__icon--tools"></span>
+          <li class="about-product__list-item about-product__list-item--tools">
             Замените один-два приема обычной еды на наше функциональное питание.
           </li>
-          <li class="about-product__list-item">
-            <span class="about-product-icon about-product__icon--timer"></span>
+          <li class="about-product__list-item about-product__list-item--timer">
             Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
           </li>
         </ul>
