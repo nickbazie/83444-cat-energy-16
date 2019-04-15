@@ -18,7 +18,7 @@
   color: #000000;
 
   text-transform: uppercase;
-  &:before {
+  &::before {
     position: absolute;
     top: -5px;
     left: 20px;
@@ -33,7 +33,7 @@
     background-color: #68b738;
     border-radius: 50%
   }
-  &--loose:after {
+  &--loose::after {
     position: absolute;
     top: -5px;
     left: 30px;
