@@ -1,7 +1,6 @@
 .about-product {
   margin: 0 20px;
   padding: 0;
-
 }
 
 .about-product__title {
@@ -17,72 +16,58 @@
   min-height: 60px;
   margin-bottom: 20px;
   padding-left: 80px;
-  &:before {
+
+  &::before {
     position: absolute;
     top: 0;
     left: 0;
-
     width: 60px;
     height: 60px;
-
     background-color: #68b738;
     content: '';
-
   }
-  &--leaf:after {
-    position: absolute;
 
+  &--leaf::after {
+    position: absolute;
     top: 5px;
     left: 5px;
-
     width: 60px;
     height: 60px;
-
     background: url(../img/advantage-leaf@1x.png);
     background-repeat: no-repeat;
-
     content: '';
   }
-  &--water:after {
-    position: absolute;
 
+  &--water::after {
+    position: absolute;
     top: 5px;
     left: 5px;
-
     width: 60px;
     height: 60px;
-
     background: url(../img/advantage-powder@1x.png);
     background-repeat: no-repeat;
-
     content: '';
   }
-  &--tools:after {
-    position: absolute;
 
+  &--tools::after {
+    position: absolute;
     top: 5px;
     left: 5px;
-
     width: 60px;
     height: 60px;
-
     background: url(../img/advantage-dining@1x.png);
     background-repeat: no-repeat;
-
     content: '';
   }
-  &--timer:after {
-    position: absolute;
 
+  &--timer::after {
+    position: absolute;
     top: 5px;
     left: 5px;
-
     width: 60px;
     height: 60px;
-
     background: url(../img/advantage-clock@1x.png);
     background-repeat: no-repeat;
-
     content: '';
   }
 }

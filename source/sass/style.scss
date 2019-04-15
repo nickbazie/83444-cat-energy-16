@@ -1,4 +1,5 @@
 @import 'fonts.scss';
+@import 'global.scss'
 @import 'about-product.scss';
 @import 'about.scss';
 @import 'btn.scss';
@@ -15,16 +16,3 @@
 @import 'show-all.scss';
 @import 'site-list.scss';
 @import 'social-list.scss';
-
-body {
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
-
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 18px;
-  color: #444444;
-
-  background-color: white;
-}
