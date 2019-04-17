@@ -4,7 +4,7 @@
 }
 
 .about-product__title {
-  font-family: 'Oswald', Arial, Helvetica, sans-serif;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-size: 36px;
   font-weight: 400;
   line-height: 60px;
@@ -24,7 +24,7 @@
     width: 60px;
     height: 60px;
     background-color: #68b738;
-    content: '';
+    content: "";
   }
 
   &--leaf::after {
@@ -33,9 +33,9 @@
     left: 5px;
     width: 60px;
     height: 60px;
-    background: url(../img/advantage-leaf@1x.png);
+    background: url("../img/advantage-leaf@1x.png");
     background-repeat: no-repeat;
-    content: '';
+    content: "";
   }
 
   &--water::after {
@@ -44,9 +44,9 @@
     left: 5px;
     width: 60px;
     height: 60px;
-    background: url(../img/advantage-powder@1x.png);
+    background: url("../img/advantage-powder@1x.png");
     background-repeat: no-repeat;
-    content: '';
+    content: "";
   }
 
   &--tools::after {
@@ -55,9 +55,9 @@
     left: 5px;
     width: 60px;
     height: 60px;
-    background: url(../img/advantage-dining@1x.png);
+    background: url("../img/advantage-dining@1x.png");
     background-repeat: no-repeat;
-    content: '';
+    content: "";
   }
 
   &--timer::after {
@@ -66,8 +66,8 @@
     left: 5px;
     width: 60px;
     height: 60px;
-    background: url(../img/advantage-clock@1x.png);
+    background: url("../img/advantage-clock@1x.png");
     background-repeat: no-repeat;
-    content: '';
+    content: "";
   }
 }
