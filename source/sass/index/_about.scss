@@ -1,0 +1,26 @@
+.about {
+  width: 100%;
+  padding: 0;
+  margin: 0 20px;
+  margin-bottom: 20px;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background-color: #63a73a;
+}
+
+.about__header {
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+}
+
+.about__slogan {
+  font-size: 14px;
+  line-height: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.about__call-to-action {
+  background-color: #68b738;
+}
