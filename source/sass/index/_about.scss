@@ -1,17 +1,27 @@
 .about {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding: 0;
-  margin: 0 20px;
   margin-bottom: 20px;
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-  background-color: #63a73a;
+  background-color: $about-green;
 }
 
 .about__header {
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
+}
+
+.about__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background-position-x: center;
 }
 
 .about__slogan {
@@ -22,5 +32,32 @@
 }
 
 .about__call-to-action {
-  background-color: #68b738;
+  background-color: $cat-green;
+}
+
+@media (min-width: $tablet-width) {
+  .about {
+    background-color: #ffffff;
+  }
+
+  .about__header {
+    font-size: 60px;
+    line-height: 60px;
+    color: #000000;
+  }
+
+  .about__slogan {
+    color: #000000;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .about__wrapper {
+    background: none;
+  }
+
+  .about__call-to-action {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

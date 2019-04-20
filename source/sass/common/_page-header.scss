@@ -1,6 +1,30 @@
 .page-header {
-  width: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0 20px;
   padding: 0;
   background-color: #ffffff;
+}
+
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.page-header__logo {
+  width: 220px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .page-header__toggle {
+    display: none;
+  }
 }

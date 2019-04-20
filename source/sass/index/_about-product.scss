@@ -71,3 +71,14 @@
     content: "";
   }
 }
+
+@media (min-width: $tablet-width) {
+  .about-product__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-product__list-item {
+    min-width: 324px;
+  }
+}
