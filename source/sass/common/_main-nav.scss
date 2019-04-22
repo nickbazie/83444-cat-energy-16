@@ -1,12 +1,37 @@
 .main-nav {
+  width: 320px;
+  margin: 0 auto;
   background-color: #ffffff;
 }
 
 .main-nav__link {
+  min-height: 65px;
   font-family: "Oswald Medium", "Arial", "Helvetica", sans-serif;
   font-size: 20px;
   line-height: 20px;
   color: #000000;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+
+  .main-nav__list {
+    width: 440px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .main-nav__link {
+    font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
 }

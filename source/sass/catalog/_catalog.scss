@@ -6,3 +6,20 @@
   color: #000000;
   background-color: #f2f2f2;
 }
+
+@media (min-width: $tablet-width) {
+  .catalog {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .catalog__item {
+    display: flex;
+    padding: 0 40px;
+    justify-content: center;
+    width: 324px;
+    background-color: $cat-grey;
+    box-sizing: border-box;
+  }
+}
