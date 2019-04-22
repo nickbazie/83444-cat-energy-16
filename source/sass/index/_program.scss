@@ -1,6 +1,9 @@
+.program-wrapper {
+  margin: $mobile-margin;
+}
+
 .program {
   padding: 0;
-  margin: 0 20px;
   margin-bottom: 20px;
   background-color: #f2f2f2;
 }
@@ -69,5 +72,23 @@
     content: "";
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .program-wrapper {
+    margin: $tablet-margin;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .program-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: $desktop-margin;
+  }
+
+  .program {
+    width: 570px;
   }
 }

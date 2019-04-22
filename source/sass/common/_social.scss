@@ -2,3 +2,15 @@
   display: flex;
   justify-content: center;
 }
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    width: 570px;
+  }
+}

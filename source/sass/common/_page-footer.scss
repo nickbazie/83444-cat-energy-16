@@ -3,9 +3,16 @@
 }
 
 @media (min-width: $tablet-width) {
-  .page-footer {
+  .page-footer__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: $tablet-margin;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__wrapper {
+    margin: $desktop-margin;
   }
 }

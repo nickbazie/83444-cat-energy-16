@@ -73,12 +73,26 @@
 }
 
 @media (min-width: $tablet-width) {
+  .about-product {
+    margin: $tablet-margin;
+  }
+
   .about-product__list {
     display: flex;
     flex-wrap: wrap;
   }
 
   .about-product__list-item {
-    min-width: 324px;
+    width: 324px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-product {
+    margin: $desktop-margin;
+  }
+
+  .about-product__list-item {
+    width: 245px;
   }
 }
