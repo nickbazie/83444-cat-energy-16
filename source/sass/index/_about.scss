@@ -6,7 +6,9 @@
   padding: 0;
   margin-bottom: 20px;
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
-  background-color: $about-green;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background-position: center 0;
+  background-size: cover;
 }
 
 .about__header {
@@ -20,8 +22,6 @@
   flex-direction: column;
   align-content: center;
   align-items: center;
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-  background-position-x: center;
 }
 
 .about__slogan {
@@ -37,8 +37,8 @@
 
 @media (min-width: $tablet-width) {
   .about {
-    background-color: #ffffff;
     margin: $tablet-margin;
+    background: #ffffff;
   }
 
   .about__wrapper {
@@ -47,7 +47,7 @@
     align-items: flex-start;
     width: 457px;
     padding-left: 90px;
-    background: #ffffff;
+    background: none;
   }
 
   .about__header {
@@ -71,15 +71,27 @@
 @media (min-width: $desktop-width) {
   .about {
     margin: $desktop-margin;
-    justify-content: flex-start;
+    width: 975px;
+    padding: 0 80px;
+    box-sizing: border-box;
+    justify-content: space-between;
     align-items: flex-start;
+    background: none;
   }
 
   .about__wrapper {
     justify-content: flex-start;
+    align-items: flex-start;
     width: 570px;
     padding-left: 0;
-    background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-    background-position-x: right;
+    background: none;
+  }
+
+  .about__action {
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
   }
 }

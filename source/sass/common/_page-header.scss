@@ -1,9 +1,13 @@
 .page-header {
+  background-color: #ffffff;
+  margin: 0;
+}
+
+.page-header__menu-wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
+  margin: $mobile-margin;
   padding: 0;
-  background-color: #ffffff;
 }
 
 .page-header__wrapper {
@@ -12,12 +16,16 @@
   align-items: center;
 }
 
-.page-header__logo {
-  width: 220px;
+.page-header__logo img {
+  width: 100%;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
+    background: none;
+  }
+
+  .page-header__menu-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -32,6 +40,13 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat;
+    background-position: right 0;
+    background-size: 50%;
+    z-index: inherit;
+  }
+
+  .page-header__menu-wrapper {
     margin: $desktop-margin;
   }
 }
