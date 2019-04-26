@@ -15,6 +15,7 @@
   font-size: 36px;
   line-height: 36px;
   color: #ffffff;
+  text-align: center;
 }
 
 .about__wrapper {
@@ -22,6 +23,8 @@
   flex-direction: column;
   align-content: center;
   align-items: center;
+  margin: $mobile-margin;
+  padding-top: 29px;
 }
 
 .about__slogan {
@@ -37,7 +40,6 @@
 
 @media (min-width: $tablet-width) {
   .about {
-    margin: $tablet-margin;
     background: #ffffff;
   }
 
@@ -54,6 +56,7 @@
     font-size: 60px;
     line-height: 60px;
     color: #000000;
+    text-align: start;
   }
 
   .about__slogan {
@@ -70,7 +73,6 @@
 
 @media (min-width: $desktop-width) {
   .about {
-    margin: $desktop-margin;
     width: 975px;
     padding: 0 80px;
     box-sizing: border-box;
@@ -80,6 +82,7 @@
   }
 
   .about__wrapper {
+    margin: 0;
     justify-content: flex-start;
     align-items: flex-start;
     width: 570px;
