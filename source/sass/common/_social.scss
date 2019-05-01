@@ -52,13 +52,15 @@
 }
 
 @media (min-width: $tablet-width) {
-  .social {
+  .social__wrapper {
     width: 324px;
+    border: none;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .social {
+  .social__wrapper {
     width: 570px;
+    border: none;
   }
 }
