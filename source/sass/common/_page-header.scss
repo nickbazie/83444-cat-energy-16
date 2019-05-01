@@ -51,6 +51,7 @@
   &::before,
   &::after {
     content: "";
+    top: 10px;
     right: 0;
     position: absolute;
 
@@ -72,6 +73,10 @@
 
 .page-header__logo img {
   width: 100%;
+}
+
+.page-header--no-js .page-header__toggle {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
