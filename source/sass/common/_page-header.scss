@@ -90,6 +90,15 @@
   .page-header__toggle {
     display: none;
   }
+
+  .main-nav__link--active {
+    border-bottom: 2px solid $cat-green;
+    padding-bottom: 10px;
+  }
+
+  .about__product {
+    order: 2;
+  }
 }
 
 @media (min-width: $desktop-width) {
