@@ -97,16 +97,9 @@
     padding: 60px 53px;
 
     &::before {
-      display: none;
-    }
-
-    &::after {
-      display: none;
-    }
-
-    & .program__title::before {
       position: absolute;
       top: 50%;
+      left: unset;
       transform: translateY(-50%);
       right: 60px;
       width: 200px;
@@ -118,9 +111,10 @@
       border-radius: 50%;
     }
 
-    &--loose .program__title::after {
+    &--loose::after {
       position: absolute;
       top: 50%;
+      left: unset;
       transform: translateY(-60%);
       right: 100px;
       width: 140px;
@@ -130,9 +124,10 @@
       background-repeat: no-repeat;
     }
 
-    &--gain .program__title::after {
+    &--gain::after {
       position: absolute;
       top: 50%;
+      left: unset;
       transform: translateY(-60%);
       right: 30px;
       width: 268px;
