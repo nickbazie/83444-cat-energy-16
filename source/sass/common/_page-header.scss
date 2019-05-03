@@ -71,8 +71,14 @@
   }
 }
 
-.page-header__logo img {
-  width: 100%;
+
+.page-header__logo {
+  display: inline-block;
+  width: 191px;
+  height: 39px;
+  text-decoration: none;
+
+  background: url("../img/logo-mobile.svg") no-repeat;
 }
 
 .page-header--no-js .page-header__toggle {
@@ -82,6 +88,12 @@
 @media (min-width: $tablet-width) {
   .page-header {
     background: none;
+  }
+
+  .page-header__logo {
+    width: 174px;
+    height: 59px;
+    background: url("../img/logo-tablet.svg") no-repeat;
   }
 
   .page-header__menu-wrapper {
@@ -112,6 +124,12 @@
     background-position: right 0;
     background-size: 50%;
     z-index: inherit;
+  }
+
+  .page-header__logo {
+    width: 203px;
+    height: 60px;
+    background: url("../img/logo-desktop.svg") no-repeat;
   }
 
   .page-header__menu-wrapper {
