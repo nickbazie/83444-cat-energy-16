@@ -4,7 +4,7 @@
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 197px;
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   background: url("../img/index-background-mobile@1x.jpg") no-repeat;
   background-position: center 0;
@@ -14,17 +14,20 @@
 .about__header {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 500;
   color: #ffffff;
   text-align: center;
+  margin: 0;
+  padding: 29px 10px 10px 10px;
 }
 
 .about__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
   margin: $mobile-margin;
-  padding-top: 29px;
 }
 
 .about__slogan {
@@ -32,9 +35,24 @@
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-top: 9px;
+  padding: 0;
+  padding-bottom: 168px;
+}
+
+.about__image {
+  position: absolute;
+  width: 280px;
+  height: 270px;
+  bottom: -140px;
+  background: url("../img/index-can-mobile@1x.png") no-repeat;
 }
 
 .about__call-to-action {
+  position: absolute;
+  bottom: -170px;
   background-color: $cat-green;
 }
 
