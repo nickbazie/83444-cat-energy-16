@@ -1,5 +1,7 @@
 .catalog__item {
   margin-bottom: 25px;
+  border-bottom: 1px solid #e6e6e6;
+  box-sizing: border-box;
 }
 
 .product__show-all {
@@ -9,11 +11,6 @@
 
 .product-wrapper {
   display: flex;
-}
-
-.catalog__item {
-  border-bottom: 1px solid #e6e6e6;
-  box-sizing: border-box;
 }
 
 @media (min-width: $tablet-width) {
