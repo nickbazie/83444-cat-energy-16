@@ -1,8 +1,10 @@
 var pageHeader = document.querySelector('.page-header');
+var pageFooter = document.querySelector('.page-footer');
 var menuWrapper = document.querySelector('.page-header__menu-wrapper');
 var navToggle = document.querySelector('.page-header__toggle');
 
 pageHeader.classList.remove('page-header--no-js');
+pageFooter.classList.remove('page-footer--no-js');
 
 navToggle.addEventListener('click', function() {
   if (menuWrapper.classList.contains('page-header__menu-wrapper--closed')) {
