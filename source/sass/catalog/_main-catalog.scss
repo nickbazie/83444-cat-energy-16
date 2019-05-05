@@ -1,14 +1,14 @@
-
-
 .main-catalog__title {
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-weight: 400;
   font-size: 36px;
   line-height: 60px;
   color: #111111;
-  margin: $mobile-margin;
-  padding: 19px 5px;
+  padding: $mobile-margin;
+  margin-top: 19px;
+  padding-bottom: 23px;
   border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6;
 }
 
 @media (min-width: $tablet-width) {
