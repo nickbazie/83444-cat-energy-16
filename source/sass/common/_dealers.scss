@@ -57,6 +57,7 @@
 @media (min-width: $tablet-width) {
   .dealers__map--no-js {
     background: url("../img/bg-map-tablet@1x.png") no-repeat;
+    background-size: cover;
   }
 
   .dealers__wrapper {
@@ -102,6 +103,7 @@
 
   .dealers__map--no-js {
     background: url("../img/bg-map-desktop@1x.png") no-repeat;
+    background-size: cover;
   }
 
   .dealers__map--no-js .dealers__link {
