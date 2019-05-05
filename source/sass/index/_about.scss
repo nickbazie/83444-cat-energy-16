@@ -58,19 +58,30 @@
 
 @media (min-width: $tablet-width) {
   .about {
-    background: #ffffff;
+    background: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin: $tablet-margin;
+    padding-bottom: 460px;
   }
 
   .about__wrapper {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    position: relative;
     padding-left: 90px;
     background: none;
-    margin: $tablet-margin;
+    margin: 0;
+    padding-top: 50px;
+    box-sizing: border-box;
   }
 
   .about__header {
+    width: 427px;
+    padding: 0;
     font-size: 60px;
     line-height: 60px;
     color: #000000;
@@ -78,14 +89,23 @@
   }
 
   .about__slogan {
+    margin-top: 33px;
     color: #000000;
     font-size: 20px;
     line-height: 20px;
   }
 
   .about__call-to-action {
-    font-size: 20px;
-    line-height: 20px;
+    bottom: 70px;
+  }
+
+  .about__image {
+    width: 709px;
+    height: 609px;
+    bottom: -460px;
+    left: 0;
+    background: url("../img/index-can-tablet@1x.jpg") no-repeat;
+    z-index: -1;
   }
 }
 

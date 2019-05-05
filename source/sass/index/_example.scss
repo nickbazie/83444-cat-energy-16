@@ -1,0 +1,158 @@
+.example {
+  background-color: $cat-grey;
+}
+
+.example__wrapper {
+  margin: $mobile-margin;
+}
+
+.example__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 60px;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  color: #111111;
+  margin: 0;
+  padding: 0;
+}
+
+.example__table {
+  width: 100%;
+}
+
+.example__row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.example__value {
+  width: 124px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  color: #111111;
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 18px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
+}
+
+.example__description {
+  position: absolute;
+  width: 85px;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: #444444;
+  background-color: $cat-grey;
+  text-align: center;
+  margin: 0 auto;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(70%);
+  z-index: 10;
+}
+
+.example__value--kg {
+  position: relative;
+}
+
+.example__description--kg {
+  position: absolute;
+  box-sizing: border-box;
+  padding: 0 10px;
+  bottom: 0;
+}
+
+.example__value--days {
+  position: relative;
+}
+
+.example__cost {
+  width: 100%;
+  margin-top: 36px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .example__wrapper {
+    margin: $tablet-margin;
+  }
+
+  .example {
+    background: none;
+  }
+
+  .example__title {
+    font-size: 60px;
+    font-weight: 60px;
+    margin-bottom: 60px;
+  }
+
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 10px;
+  }
+
+  .example__table {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 200px;
+  }
+
+  .example__table tbody {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .example__value {
+    width: 162px;
+    font-size: 30px;
+    line-height: 37px;
+    box-sizing: border-box;
+  }
+
+  .example__row {
+    width: 50%;
+  }
+
+  .example__expenses {
+    text-align: right;
+    justify-content: flex-end;
+  }
+
+  .example__cost {
+    font-size: 20px;
+    line-height: 20px;
+    width: 192px;
+    margin: 0;
+    text-align: right;
+  }
+
+  .example__description {
+    background-color: #ffffff;
+    width: 114px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0;
+    transform: translateX(-50%) translateY(50%);
+  }
+
+  .example__description--days {
+    width: 142px;
+  }
+}

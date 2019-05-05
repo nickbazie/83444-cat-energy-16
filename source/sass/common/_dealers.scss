@@ -1,0 +1,111 @@
+.dealers {
+  width: 100%;
+  background-color: #ffffff;
+}
+
+.dealers__wrapper {
+  margin: $mobile-margin;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 24px;
+}
+
+.dealers__address {
+  margin-right: 5px;
+  font-style: normal;
+  line-height: 20px;
+}
+
+.dealers__heading {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+}
+
+.dealers__map {
+  position: relative;
+  background-color: $cat-grey;
+}
+
+.dealers__map--no-js {
+  width: 100%;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat;
+  background-size: cover;
+}
+
+.dealers__link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-95%);
+  width: 113px;
+  height: 106px;
+  z-index: 10;
+}
+
+.dealers__map--no-js .dealers__link {
+  top: 60%;
+}
+
+@media (min-width: $tablet-width) {
+  .dealers__map--no-js {
+    background: url("../img/bg-map-tablet@1x.png") no-repeat;
+  }
+
+  .dealers__wrapper {
+    margin: $tablet-margin;
+    padding-top: 65px;
+    padding-bottom: 60px;
+  }
+
+  .dealers__heading {
+    font-size: 20px;
+    line-height: 25px;
+    width: 150px;
+    padding-left: 41px;
+  }
+
+  .dealers__address {
+    font-size: 16px;
+    padding-right: 41px;
+    text-align: right;
+  }
+
+  .dealers__address--city {
+    display: inline-block;
+    padding-top: 16px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .dealers {
+    position: relative;
+  }
+
+  .dealers__wrapper {
+    background: #ffffff;
+    position: absolute;
+    width: 570px;
+    box-sizing: border-box;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 80px;
+    z-index: 10;
+  }
+
+  .dealers__map--no-js {
+    background: url("../img/bg-map-desktop@1x.png") no-repeat;
+  }
+
+  .dealers__map--no-js .dealers__link {
+    top: 60%;
+    left: 75%;
+  }
+}
