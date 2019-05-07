@@ -1,0 +1,35 @@
+.adds-item {
+  margin-bottom: 0;
+  margin-top: 10px;
+  border: none;
+}
+
+.adds-item__product {
+  padding: unset;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #cdcdcd;
+}
+
+.adds-item__details {
+  width: 100%;
+  margin-bottom: 14px;
+}
+
+.adds-item__name {
+  font-weight: 400;
+  color: #222222;
+}
+
+.adds-item__row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.adds-item__field {
+  width: 50%;
+}
+
+.adds-item__value {
+  width: 50%;
+}

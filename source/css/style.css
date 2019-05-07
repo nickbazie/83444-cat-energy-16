@@ -130,6 +130,7 @@ img {
     font-size: 16px;
     line-height: 24px; }
     .about-product__list-item:nth-child(2n) {
+      width: 324px;
       margin-right: 0; }
     .about-product__list-item::before {
       width: 80px;
@@ -257,8 +258,21 @@ img {
 
 @media (min-width: 768px) {
   .about {
-    background: #ffffff; }
+    background: transparent;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    margin: 0 30px;
+    padding-bottom: 460px; }
   .about__wrapper {
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -269,21 +283,34 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    position: relative;
     padding-left: 90px;
     background: none;
-    margin: 0 30px; }
+    margin: 0;
+    padding-top: 50px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
   .about__header {
+    width: 427px;
+    padding: 0;
     font-size: 60px;
     line-height: 60px;
     color: #000000;
     text-align: start; }
   .about__slogan {
+    margin-top: 33px;
     color: #000000;
     font-size: 20px;
     line-height: 20px; }
   .about__call-to-action {
-    font-size: 20px;
-    line-height: 20px; } }
+    bottom: 70px; }
+  .about__image {
+    width: 709px;
+    height: 609px;
+    bottom: -460px;
+    left: 0;
+    background: url("../img/index-can-tablet@1x.jpg") no-repeat;
+    z-index: -1; } }
 
 @media (min-width: 1200px) {
   .about {
@@ -329,7 +356,10 @@ img {
 
 @media (min-width: 768px) {
   .btn {
-    width: auto; } }
+    width: auto;
+    font-size: 20px;
+    line-height: 20px;
+    padding: 17px 29px 15px 26px; } }
 
 @media (min-width: 1200px) {
   .btn {
@@ -379,9 +409,11 @@ img {
   font-size: 36px;
   line-height: 60px;
   color: #111111;
-  margin: 0 20px;
-  padding: 19px 5px;
-  border-bottom: 1px solid #e6e6e6; }
+  padding: 0 20px;
+  margin-top: 19px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid #e6e6e6;
+  border-top: 1px solid #e6e6e6; }
 
 @media (min-width: 768px) {
   .main-catalog__title {
@@ -448,6 +480,7 @@ img {
   padding: 22px 0; }
 
 .product-details__name {
+  width: 60%;
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -608,12 +641,109 @@ img {
   .page-footer__wrapper {
     margin: 0 40px; } }
 
+.dealers {
+  width: 100%;
+  background-color: #ffffff; }
+
+.dealers__catalog {
+  background-color: #f2f2f2; }
+
+.dealers__wrapper {
+  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 28px;
+  padding-bottom: 24px; }
+
+.dealers__address {
+  margin-right: 5px;
+  font-style: normal;
+  line-height: 20px; }
+
+.dealers__heading {
+  margin: 0;
+  padding: 0;
+  width: 50%;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111; }
+
+.dealers__map {
+  position: relative;
+  background-color: #f2f2f2; }
+
+.dealers__map--no-js {
+  width: 100%;
+  background: url("../img/bg-map-mobile@1x.png") no-repeat;
+  background-size: cover; }
+
+.dealers__link {
+  display: none; }
+
+.dealers__map--no-js .dealers__link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-95%);
+          transform: translateX(-50%) translateY(-95%);
+  width: 113px;
+  height: 106px;
+  z-index: 10;
+  display: block;
+  top: 60%; }
+
+@media (min-width: 768px) {
+  .dealers__map--no-js {
+    background: url("../img/bg-map-tablet@1x.png") no-repeat;
+    background-size: cover; }
+  .dealers__wrapper {
+    margin: 0 30px;
+    padding-top: 65px;
+    padding-bottom: 60px; }
+  .dealers__heading {
+    font-size: 20px;
+    line-height: 25px;
+    width: 150px;
+    padding-left: 41px; }
+  .dealers__address {
+    font-size: 16px;
+    padding-right: 41px;
+    text-align: right; }
+  .dealers__address--city {
+    display: inline-block;
+    padding-top: 16px; } }
+
+@media (min-width: 1200px) {
+  .dealers {
+    position: relative; }
+  .dealers__wrapper {
+    background: #ffffff;
+    position: absolute;
+    width: 570px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    left: 80px;
+    z-index: 10; }
+  .dealers__map--no-js {
+    background: url("../img/bg-map-desktop@1x.png") no-repeat;
+    background-size: cover; }
+  .dealers__map--no-js .dealers__link {
+    top: 60%;
+    left: 75%; } }
+
 .page-header {
   background-color: #ffffff;
-  margin: 0;
-  border-bottom: 1px solid #e6e6e6;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+  margin: 0; }
 
 .page-header__menu-wrapper {
   display: -webkit-box;
@@ -948,5 +1078,246 @@ img {
   .social__wrapper {
     width: 570px;
     border: none; } }
+
+.cat-program__fieldset {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.before-after {
+  background-color: #f2f2f2; }
+
+.example {
+  background-color: #f2f2f2; }
+
+.example__wrapper {
+  margin: 0 20px; }
+
+.example__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 60px;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  color: #111111;
+  margin: 0;
+  padding: 0; }
+
+.example__table {
+  width: 100%; }
+
+.example__row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.example__value {
+  width: 124px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  color: #111111;
+  margin: 0;
+  padding: 0;
+  padding-top: 16px;
+  padding-bottom: 18px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px; }
+
+.example__description {
+  position: absolute;
+  width: 85px;
+  font-size: 12px;
+  line-height: 12px;
+  font-family: "Arial", "Helvetica", sans-serif;
+  color: #444444;
+  background-color: #f2f2f2;
+  text-align: center;
+  margin: 0 auto;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(70%);
+          transform: translateX(-50%) translateY(70%);
+  z-index: 10; }
+
+.example__value--kg {
+  position: relative; }
+
+.example__description--kg {
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0 10px;
+  bottom: 0; }
+
+.example__value--days {
+  position: relative; }
+
+.example__cost {
+  width: 100%;
+  margin-top: 36px;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  color: #111111;
+  text-transform: uppercase; }
+
+@media (min-width: 768px) {
+  .example__wrapper {
+    margin: 0 30px; }
+  .example {
+    background: none; }
+  .example__title {
+    font-size: 60px;
+    font-weight: 60px;
+    margin-bottom: 60px; }
+  .example__text {
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 10px; }
+  .example__table {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 200px; }
+  .example__table tbody {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .example__value {
+    width: 162px;
+    font-size: 30px;
+    line-height: 37px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .example__row {
+    width: 50%; }
+  .example__expenses {
+    text-align: right;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+  .example__cost {
+    font-size: 20px;
+    line-height: 20px;
+    width: 192px;
+    margin: 0;
+    text-align: right; }
+  .example__description {
+    background-color: #ffffff;
+    width: 114px;
+    font-size: 14px;
+    line-height: 14px;
+    padding: 0;
+    -webkit-transform: translateX(-50%) translateY(50%);
+            transform: translateX(-50%) translateY(50%); }
+  .example__description--days {
+    width: 142px; } }
+
+.adds-item {
+  margin-bottom: 0;
+  margin-top: 10px;
+  border: none; }
+
+.adds-item__product {
+  padding: unset;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #cdcdcd; }
+
+.adds-item__details {
+  width: 100%;
+  margin-bottom: 14px; }
+
+.adds-item__name {
+  font-weight: 400;
+  color: #222222; }
+
+.adds-item__row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.adds-item__field {
+  width: 50%; }
+
+.adds-item__value {
+  width: 50%; }
+
+.catalog-adds {
+  margin: 0 20px; }
+
+.catalog-adds__title {
+  position: relative;
+  padding-right: 50px;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  color: #111111;
+  font-weight: 500;
+  margin-bottom: 30px; }
+  .catalog-adds__title::after {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 53px;
+    height: 3px;
+    background: #68b738;
+    right: -46px;
+    content: ""; }
+
+.catalog-adds__list {
+  border-top: 1px solid #cdcdcd; }
+
+.buy-all {
+  position: relative;
+  margin-top: 38px;
+  margin-bottom: 36px;
+  width: 100%;
+  height: 289px;
+  background: url("../img/gift-photo-mobile@1x.jpg") no-repeat;
+  background-size: cover; }
+  .buy-all::before {
+    position: absolute;
+    top: 65px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    background: url("../img/icon-gift.svg");
+    fill: white;
+    width: 55px;
+    height: 60px;
+    content: ""; }
+
+.buy-all__text {
+  font-size: 16px;
+  line-height: 20px;
+  padding: 188px 40px 42px 40px;
+  margin: 0 auto;
+  text-align: center;
+  color: #ffffff; }
 
 /*# sourceMappingURL=style.css.map */

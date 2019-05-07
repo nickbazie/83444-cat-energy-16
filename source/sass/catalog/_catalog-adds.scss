@@ -1,0 +1,29 @@
+.catalog-adds {
+  margin: $mobile-margin;
+}
+
+.catalog-adds__title {
+  position: relative;
+  padding-right: 50px;
+  font-size: 24px;
+  line-height: 24px;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  color: #111111;
+  font-weight: 500;
+  margin-bottom: 30px;
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%);
+    width: 53px;
+    height: 3px;
+    background: $cat-green;
+    right: -46px;
+    content: "";
+  }
+}
+
+.catalog-adds__list {
+  border-top: 1px solid #cdcdcd;
+}
