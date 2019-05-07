@@ -1,30 +1,138 @@
 .page-header {
+  background-color: #ffffff;
+  margin: 0;
+  border-bottom: 1px solid #e6e6e6;
+  box-sizing: border-box;
+}
+
+.page-header__menu-wrapper {
   display: flex;
   flex-direction: column;
-  margin: 0 20px;
   padding: 0;
-  background-color: #ffffff;
 }
 
 .page-header__wrapper {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: $mobile-margin;
+  background-color: #ffffff;
 }
 
+.page-header__toggle {
+  position: absolute;
+  width: 24px;
+  height: 22px;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+}
+
+.page-header__menu-wrapper--closed .page-header__toggle::before {
+  content: "";
+
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 24px;
+  height: 2px;
+
+  background-color: #000000;
+  box-shadow: 0 10px 0 0 #000000, 0 20px 0 0 #000000;
+}
+
+.page-header__menu-wrapper--opened .page-header__toggle {
+  content: "";
+
+  &::before,
+  &::after {
+    content: "";
+    top: 10px;
+    right: 0;
+    position: absolute;
+
+    width: 24px;
+    height: 2px;
+
+    background-color: black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+
 .page-header__logo {
-  width: 220px;
+  display: inline-block;
+  width: 191px;
+  height: 39px;
+  text-decoration: none;
+
+  background: url("../img/logo-mobile.svg") no-repeat;
+}
+
+.page-header--no-js .page-header__toggle {
+  display: none;
 }
 
 @media (min-width: $tablet-width) {
   .page-header {
+    background: none;
+  }
+
+  .page-header__logo {
+    width: 174px;
+    height: 59px;
+    background: url("../img/logo-tablet.svg") no-repeat;
+  }
+
+  .page-header__menu-wrapper {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin: $tablet-margin;
   }
 
   .page-header__toggle {
     display: none;
+  }
+
+  .main-nav__link--active {
+    border-bottom: 2px solid $cat-green;
+    padding-bottom: 10px;
+  }
+
+  .about__product {
+    order: 2;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-header {
+    background: url("../img/index-background-desktop@1x.jpg") no-repeat;
+    background-position: right 0;
+    background-size: 50%;
+    z-index: inherit;
+  }
+
+  .page-header__logo {
+    width: 203px;
+    height: 60px;
+    background: url("../img/logo-desktop.svg") no-repeat;
+  }
+
+  .page-header__menu-wrapper {
+    margin: $desktop-margin;
   }
 }

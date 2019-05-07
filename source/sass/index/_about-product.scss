@@ -11,6 +11,12 @@
   color: #111111;
 }
 
+.about-product__text {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
 .about-product__list-item {
   position: relative;
   min-height: 60px;
@@ -73,12 +79,112 @@
 }
 
 @media (min-width: $tablet-width) {
+  .about-product {
+    margin: $tablet-margin;
+  }
+
+  .about-product__title {
+    font-size: 60px;
+    line-height: 60px;
+  }
+
   .about-product__list {
     display: flex;
+    justify-content: flex-start;
     flex-wrap: wrap;
   }
 
   .about-product__list-item {
-    min-width: 324px;
+    padding: 0;
+    padding-top: 115px;
+    padding-right: 90px;
+    margin-right: 30px;
+    box-sizing: border-box;
+    width: 354px;
+    position: relative;
+    min-height: 320px;
+    font-size: 16px;
+    line-height: 24px;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &::before {
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      top: 15px;
+      left: 15px;
+    }
+
+    &--leaf {
+      position: relative;
+      // background: url("../img/advantage-leaf@2x.png"); //Нужны бэки циферок. Оставляю пока так.
+      // background-repeat: no-repeat;
+      // background-color: cyan;
+      // background-position: center;
+      // background-size: cover;
+    }
+
+    &--leaf p::after {
+      position: absolute;
+      content: "1";
+      font-size: 300px;
+      width: 100%;
+      left: 110px;
+      top: -20px;
+      color: #f2f2f2;
+      font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+      z-index: -1;
+    }
+
+    &--water p::after {
+      position: absolute;
+      content: "2";
+      font-size: 300px;
+      width: 100%;
+      left: 110px;
+      top: -20px;
+      color: #f2f2f2;
+      font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+      z-index: -1;
+    }
+
+    &--tools p::after {
+      position: absolute;
+      content: "3";
+      font-size: 300px;
+      width: 100%;
+      left: 110px;
+      top: -20px;
+      color: #f2f2f2;
+      font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+      z-index: -1;
+    }
+
+    &--timer p::after {
+      position: absolute;
+      content: "4";
+      font-size: 300px;
+      width: 100%;
+      left: 110px;
+      top: -20px;
+      color: #f2f2f2;
+      font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+      z-index: -1;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about-product {
+    margin: $desktop-margin;
+  }
+
+  .about-product__list-item {
+    width: 245px;
   }
 }

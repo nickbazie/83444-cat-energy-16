@@ -4,24 +4,30 @@
   justify-content: center;
   align-items: center;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 197px;
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
-  background-color: $about-green;
+  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
+  background-position: center 0;
+  background-size: cover;
 }
 
 .about__header {
   font-size: 36px;
   line-height: 36px;
+  font-weight: 500;
   color: #ffffff;
+  text-align: center;
+  margin: 0;
+  padding: 29px 10px 10px 10px;
 }
 
 .about__wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-content: center;
   align-items: center;
-  background: url("../img/index-background-mobile@1x.jpg") no-repeat;
-  background-position-x: center;
+  margin: $mobile-margin;
 }
 
 .about__slogan {
@@ -29,21 +35,46 @@
   line-height: 14px;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  margin-top: 9px;
+  padding: 0;
+  padding-bottom: 168px;
+}
+
+.about__image {
+  position: absolute;
+  width: 280px;
+  height: 270px;
+  bottom: -140px;
+  background: url("../img/index-can-mobile@1x.png") no-repeat;
 }
 
 .about__call-to-action {
+  position: absolute;
+  bottom: -170px;
   background-color: $cat-green;
 }
 
 @media (min-width: $tablet-width) {
   .about {
-    background-color: #ffffff;
+    background: #ffffff;
+  }
+
+  .about__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 90px;
+    background: none;
+    margin: $tablet-margin;
   }
 
   .about__header {
     font-size: 60px;
     line-height: 60px;
     color: #000000;
+    text-align: start;
   }
 
   .about__slogan {
@@ -52,12 +83,30 @@
     line-height: 20px;
   }
 
-  .about__wrapper {
-    background: none;
-  }
-
   .about__call-to-action {
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .about {
+    padding: 0 80px;
+    box-sizing: border-box;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background: none;
+  }
+
+  .about__wrapper {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 0;
+    background: none;
+  }
+
+  .about__header {
+    text-align: start;
   }
 }
