@@ -10,10 +10,16 @@
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
-    <header class="page-header page-header--no-js">
+    <header class="page-header page-header--index page-header--no-js">
       <div class="page-header__menu-wrapper page-header__menu-wrapper--closed">
         <div class="page-header__wrapper">
-          <a class="page-header__logo"><span class="visually-hidden">Логотип компании "Cat Energy"</span></a>
+          <a class="page-header__logo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo-desktop.svg">
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="header__logo-image" src="img/logo-mobile.svg" width="191" height="38" alt="Cat Energy logo">
+            </picture>
+          </a>
           <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span class="visually-hidden"></button>
         </div>
         <nav class="main-nav">
@@ -30,7 +36,20 @@
         <div class="about__wrapper">
           <h1 class="about__header">Функциональное питание для котов</h1>
           <p class="about__slogan">Занялся собой? Займись котом!</p>
-          <div class="about__image"><span class="visually-hidden">Продукт компании Cat Energy</span></div>
+          <div class="about__image">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)"
+                srcset="img/index-can-desktop@1x.webp 1x, img/index-can-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)"
+                srcset="img/index-can-tablet@1x.webp 1x, img/index-can-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/index-can-mobile@1x.webp 1x, img/index-can-mobile@2x.webp 2x">
+    
+              <source media="(min-width: 1200px)" srcset="img/index-can-desktop@1x.png 1x, img/index-can-desktop@2x.png 2x">
+              <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg 1x, img/index-can-tablet@2x.jpg 2x">
+              <img class="index-promo__image" src="img/index-can-mobile@1x.png" srcset="img/index-can-mobile@2x.png 2x"
+                alt="Cat Energy PRO">
+            </picture>
+          </div>
           <a class="about__call-to-action btn" href="form.html">Подобрать программу</a>
         </div>
       </section>

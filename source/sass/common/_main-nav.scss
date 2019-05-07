@@ -70,11 +70,20 @@
     text-decoration: none;
     text-transform: uppercase;
   }
+
+  .main-nav__link--active {
+    border-bottom: 2px solid $cat-green;
+    padding-bottom: 10px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
     display: block;
+  }
+
+  .main-nav__link {
+    color: #ffffff;
   }
 
   .site-list__item {
@@ -83,5 +92,10 @@
     &:first-child {
       border: none;
     }
+  }
+
+  .main-nav__link--active {
+    border-bottom: 2px solid #ffffff;
+    padding-bottom: 10px;
   }
 }

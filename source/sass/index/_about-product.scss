@@ -180,6 +180,10 @@
     margin: $desktop-margin;
   }
 
+  .about-product__list {
+    justify-content: space-between;
+  }
+
   .about-product__list-item {
     width: 245px;
   }

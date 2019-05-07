@@ -59,7 +59,8 @@
 
   &::after {
     position: absolute;
-    bottom: 25px;
+    top: 50%;
+    transform: translateY(-50%);
     right: 20px;
     width: 24px;
     height: 11px;
@@ -119,9 +120,6 @@
       right: 100px;
       width: 140px;
       height: 195px;
-      content: "";
-      background-image: url("../img/icon-cat-slim.svg");
-      background-repeat: no-repeat;
     }
 
     &--gain::after {
@@ -132,9 +130,6 @@
       right: 30px;
       width: 268px;
       height: 112px;
-      content: "";
-      background-image: url("../img/icon-cat-pro.svg");
-      background-repeat: no-repeat;
     }
   }
 
@@ -165,10 +160,71 @@
   .program-wrapper {
     display: flex;
     justify-content: space-between;
-    margin: $desktop-margin;
+    margin: 0;
+    margin-top: 80px;
   }
 
   .program {
-    width: 570px;
+    width: 50%;
+    padding: 81px 53px 50px 53px;
+    margin: $desktop-margin;
+    box-sizing: border-box;
+
+    &::before {
+      position: absolute;
+      top: 47px;
+      left: 53px;
+      transform: unset;
+      right: unset;
+      width: 100px;
+      height: 100px;
+      content: "";
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-color: $cat-green;
+      border-radius: 50%;
+    }
+
+    &--loose::after {
+      position: absolute;
+      top: 97px;
+      left: 70px;
+      transform: translateY(-60%);
+      right: unset;
+      width: 70px;
+      height: 97px;
+    }
+
+    &--gain::after {
+      position: absolute;
+      top: 110px;
+      left: 35px;
+      right: unset;
+      transform: translateY(-60%);
+      right: 30px;
+      width: 134px;
+      height: 56px;
+    }
+  }
+
+  .program__description {
+    width: 100%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .program__title {
+    text-align: center;
+    padding-bottom: 70px;
+    margin-bottom: 0;
+  }
+
+  .program a {
+    font-size: 20px;
+    line-height: 20px;
+    
+    &::after {
+      right: 25px;
+    }
   }
 }
