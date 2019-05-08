@@ -50,14 +50,13 @@
 
 .dealers__map--no-js .dealers__link {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translateX(-50%) translateY(-95%);
   width: 113px;
   height: 106px;
   z-index: 10;
   display: block;
-  top: 60%;
 }
 
 @media (min-width: $tablet-width) {

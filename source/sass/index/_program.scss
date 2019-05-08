@@ -199,7 +199,6 @@
       position: absolute;
       top: 110px;
       left: 35px;
-      right: unset;
       transform: translateY(-60%);
       right: 30px;
       width: 134px;
@@ -222,7 +221,7 @@
   .program a {
     font-size: 20px;
     line-height: 20px;
-    
+
     &::after {
       right: 25px;
     }
