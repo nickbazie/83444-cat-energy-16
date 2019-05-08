@@ -1,23 +1,53 @@
 .cat-program {
-  display: flex;
-  flex-direction: column;
+  margin: $mobile-margin;
   margin-bottom: 33px;
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+
 }
 
 .cat-program__fieldset {
-  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  margin-bottom: 20px;
 }
 
 .cat-program__label {
-  display: block;
+  display: flex;
+  align-items: center;
   color: #222222;
+  margin-bottom: 15px;
   font-size: 16px;
   line-height: 18px;
+  padding-right: 16px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.cat-program__name {
+  margin-right: 13px;
+  white-space: nowrap;
 }
 
 .cat-program__textarea {
   display: block;
   width: 100%;
+}
+
+.cat-program__input {
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  padding: 14px 15px;
+  border: 1px solid #e7e7e7;
+  box-sizing: border-box;
+}
+
+.cat-details .cat-program__input {
+  width: 100%;
+  flex-grow: 1;
+}
+
+.cat-program__item {
+  display: flex;
 }

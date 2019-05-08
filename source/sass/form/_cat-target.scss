@@ -1,0 +1,39 @@
+.cat-target__label {
+  position: relative;
+
+  display: block;
+  cursor: pointer;
+  padding-left: 46px;
+}
+
+.cat-target__input + .cat-target__label::before {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
+}
+
+.cat-target__input:checked + .cat-target__label::after {
+  content: "";
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 10px;
+  width: 12px;
+  height: 12px;
+  background: #68b738;
+  border-radius: 50%;
+}
+
+.cat-target__input:focus + .cat-target__label::before {
+  border-color: #bababa;
+  outline: 1px solid #fcc305;
+}

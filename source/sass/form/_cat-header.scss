@@ -1,17 +1,19 @@
 .cat-header__title {
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   margin: 0 auto;
   margin-bottom: 25px;
-  padding: 15px 20px;
+  padding: 15px 0;
   padding-bottom: 0;
   font-size: 36px;
   line-height: 60px;
   font-weight: 500;
-  color: #222222;
+  color: #111111;
 }
 
 .cat-header__text {
+  padding-right: 30px;
+  font-weight: 400;
   margin: 0 auto;
   margin-bottom: 39px;
-  padding: 0 20px;
   text-transform: uppercase;
 }

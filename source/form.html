@@ -41,15 +41,35 @@
         </header>
         <fieldset class="cat-program__fieldset cat-details">
           <legend class="visually-hidden">Данные кота</legend>
-          <label class="cat-program__label">Имя:*<input class="cat-program__input" type="text" name="name" placeholder="Барсик" required></label>
-          <label class="cat-program__label">Вес (кг):*<input class="cat-program__input" type="number" name="weight" placeholder="7" required></label>
-          <label class="cat-program__label">Возраст (лет):<input class="cat-program__input" type="number" name="age" placeholder="7"></label>
+          <label class="cat-program__label">
+            <span class="cat-program__name">Имя:*</span>
+            <input class="cat-program__input" type="text" name="name" placeholder="Барсик" required>
+          </label>
+          <label class="cat-program__label">
+            <span class="cat-program__name">Вес (кг):*</span>
+            <input class="cat-program__input" type="number" name="weight" placeholder="7" required>
+          </label>
+          <label class="cat-program__label">
+            <span class="cat-program__name">Возраст (лет):</span>
+            <input class="cat-program__input" type="number" name="age" placeholder="7">
+          </label>
         </fieldset>
         <fieldset class="cat-program__fieldset cat-target">
           <legend class="visually-hidden">Цель программы</legend>
-          <label class="cat-program__label"><input class="cat-program__input" type="radio" name="cat-target" checked>Похудение</label>
-          <label class="cat-program__label"><input class="cat-program__input" type="radio" name="cat-target">Набор массы</label>
-          <label class="cat-program__label"><input class="cat-program__input" type="radio" name="cat-target">Не знаю (Нужен ваш совет)</label>
+          <ul class="site-list">
+            <li class="cat-program__item">
+              <input class=" visually-hidden cat-program__input cat-target__input" type="radio" name="cat-target" id="cat-weight-loss" checked>
+              <label for="cat-weight-loss" class="cat-program__label cat-target__label">Похудение</label>
+            </li>
+            <li class="cat-program__item">
+              <input class="visually-hidden cat-program__input cat-target__input" type="radio" name="cat-target" id="cat-muscle">
+              <label for="cat-muscle" class="cat-program__label cat-target__label">Набор массы</label>
+            </li>
+            <li class="cat-program__item">
+              <input class="visually-hidden cat-program__input cat-target__input" type="radio" name="cat-target" id="cat-advice">
+              <label for="cat-advice" class="cat-program__label cat-target__label">Не знаю (Нужен ваш совет)</label>
+            </li>
+          </ul>
         </fieldset>
         <fieldset class="cat-program__fieldset cat-contacts">
           <legend class="cat-program__legend">Контактные данные (владельца кота)</legend>
@@ -62,10 +82,24 @@
         </fieldset>
         <fieldset class="cat-program__fieldset cat-additional">
           <legend class="cat-program__legend">Дополнительно</legend>
-          <label class="cat-program__label"><input class="cat-program__input" type="checkbox" name="sugar-substitute" checked>Сахарозаменитель</label>
-          <label class="cat-program__label"><input class="cat-program__input" type="checkbox" name="water">Питьевая вода</label>
-          <label class="cat-program__label"><input class="cat-program__input" type="checkbox" name="milk">Молоко</label>
-          <label class="cat-program__label"><input class="cat-program__input" type="checkbox" name="vitamins">Витамины</label>
+          <ul class="cat-additional__list site-list">
+            <li class="cat-program__item">
+              <input class="visually-hidden cat-additional__input" type="checkbox" name="sugar-substitute" id="cat-sugar" checked>
+              <label for="cat-sugar" class="cat-program__label cat-additional__label">Сахарозаменитель</label>
+            </li>
+            <li class="cat-program__item">
+              <input class="visually-hidden cat-program__input cat-additional__input" type="checkbox" name="water" id="cat-water">
+              <label for="cat-water" class="cat-program__label cat-additional__label">Питьевая вода</label>
+            </li>
+            <li class="cat-program__item">
+              <input class="visually-hidden cat-program__input cat-additional__input" type="checkbox" name="milk" id="cat-milk">
+              <label for="cat-milk" class="cat-program__label cat-additional__label">Молоко</label>
+            </li>
+            <li class="cat-program__item">
+              <input class="visually-hidden cat-program__input cat-additional__input" type="checkbox" name="vitamins" id="cat-vitamins">
+              <label for="cat-vitamins" class="cat-program__label cat-additional__label">Витамины</label>
+            </li>
+          </ul>
         </fieldset>
         <button class="cat-program__btn btn" type="submit">Отправить заявку</button>
         <p class="cat-program__required-fields">* — Обязательные поля</p>

@@ -1,0 +1,41 @@
+.cat-additional__label {
+  position: relative;
+
+  display: block;
+  cursor: pointer;
+  padding-left: 46px;
+}
+
+.cat-additional__input + .cat-additional__label::before {
+  content: "";
+
+  position: absolute;
+  top: -2px;
+  left: 0;
+
+  width: 30px;
+  height: 30px;
+  border: 1px solid #cdcdcd;
+}
+
+.cat-additional__input:checked + .cat-additional__label::after {
+  content: "";
+
+  position: absolute;
+  top: 7px;
+  left: 7px;
+  width: 21px;
+  height: 12px;
+
+  transform: rotate(-45deg);
+
+  border: 3px solid #6fba41;
+  box-sizing: border-box;
+  border-right: none;
+  border-top: none;
+}
+
+.cat-additional__input:focus + .cat-additional__label::before {
+  border-color: #bababa;
+  outline: 2px solid #fcc305;
+}
