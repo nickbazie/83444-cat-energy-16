@@ -1,5 +1,4 @@
 .cat-program {
-  margin: $mobile-margin;
   margin-bottom: 33px;
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
 
@@ -12,16 +11,32 @@
   margin-bottom: 20px;
 }
 
+.cat-program__item {
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+}
+
 .cat-program__label {
   display: flex;
   align-items: center;
+  padding-top: 4px;
   color: #222222;
-  margin-bottom: 15px;
+  margin: $mobile-margin;
+  height: 30px;
   font-size: 16px;
   line-height: 18px;
   padding-right: 16px;
   text-transform: uppercase;
   cursor: pointer;
+}
+
+.cat-program__legend {
+  margin: $mobile-margin;
+  margin-bottom: 30px;
+  color: #111111;
+  font-size: 24px;
+  line-height: 24px;
 }
 
 .cat-program__name {
@@ -31,7 +46,20 @@
 
 .cat-program__textarea {
   display: block;
-  width: 100%;
+  width: 280px;
+  margin: $mobile-margin;
+  border: 1px solid #cdcdcd;
+  padding: 14px 12px 14px 15px;
+  font-weight: 400;
+  box-sizing: border-box;
+
+  &::placeholder {
+    font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+    color: #444444;
+    font-size: 16px;
+    line-height: 18px;
+    text-transform: uppercase;
+  }
 }
 
 .cat-program__input {
@@ -48,6 +76,19 @@
   flex-grow: 1;
 }
 
-.cat-program__item {
-  display: flex;
+.cat-program__btn {
+  width: 280px;
+  border: 0;
+  margin: $mobile-margin;
+  margin-bottom: 22px;
+}
+
+.cat-program__required-fields {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-family: "Arial", "Helvetica", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  color: #444444;
 }

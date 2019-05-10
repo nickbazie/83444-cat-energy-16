@@ -1,3 +1,21 @@
+.cat-additional {
+  position: relative;
+
+  &::after {
+    position: absolute;
+    width: 136px;
+    height: 3px;
+    top: 12px;
+    right: 0;
+    background-color: $cat-green;
+    content: "";
+  }
+
+  & .cat-program__legend {
+    padding-right: 140px;
+  }
+}
+
 .cat-additional__label {
   position: relative;
 

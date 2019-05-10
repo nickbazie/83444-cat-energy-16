@@ -1,6 +1,10 @@
 .dealers {
   width: 100%;
   background-color: #ffffff;
+
+  &--dark {
+    background: #f2f2f2;
+  }
 }
 
 .dealers__catalog {

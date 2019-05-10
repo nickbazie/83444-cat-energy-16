@@ -79,11 +79,35 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    display: block;
+    background-color: #ffffff;
+    width: 570px;
+  }
+
+  .page-header--index {
+    & .main-nav {
+      background-color: transparent;
+    }
+
+    & .main-nav__link {
+      color: #ffffff;
+    }
+
+    & .main-nav__link--active {
+      border-color: #ffffff;
+    }
+  }
+
+  .main-nav__list {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
   }
 
   .main-nav__link {
-    color: #ffffff;
+    font-size: 20px;
+    line-height: 24px;
+    color: #111111;
+    margin-left: 35px;
   }
 
   .site-list__item {
@@ -95,7 +119,7 @@
   }
 
   .main-nav__link--active {
-    border-bottom: 2px solid #ffffff;
+    border-bottom: 2px solid $cat-green;
     padding-bottom: 10px;
   }
 }

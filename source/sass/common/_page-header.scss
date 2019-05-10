@@ -110,14 +110,13 @@
 
 @media (min-width: $desktop-width) {
   .page-header {
-    background: url("../img/index-background-desktop@1x.jpg") no-repeat;
-    background-position: right 0;
-    background-size: 50%;
-    z-index: inherit;
-  }
-
-  .page-header--index {
-    min-height: 695px;
+    &--index {
+      background: url("../img/index-background-desktop@1x.jpg") no-repeat;
+      background-position: right 0;
+      background-size: 50%;
+      z-index: inherit;
+      min-height: 695px;
+    }
   }
 
   .page-header__logo {
