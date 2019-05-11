@@ -1,3 +1,114 @@
 .before-after {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
   background-color: $cat-grey;
+  padding-bottom: 39px;
+}
+
+.before-after__cat {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: none;
+
+  &--active {
+    display: block;
+  }
+}
+
+.before-after__button {
+  font-family: "Oswald", "Arial", "Helvetica", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: transparent;
+  color: #111111;
+  text-transform: uppercase;
+  border: none;
+}
+
+.before-after__range {
+  margin-top: 35px;
+}
+
+.before-after__range-filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 43px;
+  padding-right: 38px;
+  list-style: none;
+}
+
+.before-after__scale {
+  width: 84px;
+  border: 1px solid #cdcdcd;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  height: 14px;
+}
+
+.before-after__bar {
+  width: 35px;
+  border: 1px solid $cat-grey;
+  background-color: $cat-green;
+  border-radius: 10px;
+  height: 6px;
+  margin: 3px 5px;
+}
+
+@media (min-width: $tablet-width) {
+  .before-after__cat {
+    width: 100%;
+  }
+
+  .before-after__scale {
+    position: relative;
+    width: 428px;
+    height: 6px;
+    border-radius: 2px;
+  }
+
+  .before-after__bar {
+    position: absolute;
+    top: -16px;
+    left: 197px;
+    width: 34px;
+    height: 34px;
+    padding: 0;
+    border: 1px solid #cdcdcd;
+    background-color: #ffffff;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+    border-radius: 50%;
+
+    &::after {
+      content: "";
+      position: absolute;
+      box-sizing: border-box;
+      width: 8px;
+      height: 8px;
+      top: 39%;
+      left: 38%;
+      border-radius: 50%;
+      background-color: $cat-green;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    &:active {
+      border: 2px solid $cat-green;
+      box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .before-after {
+    width: 50%;
+    margin-top: 0;
+  }
 }

@@ -81,6 +81,7 @@
   font-family: "Oswald", "Arial", "Helvetica", sans-serif;
   color: #111111;
   text-transform: uppercase;
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) {
@@ -154,5 +155,69 @@
 
   .example__description--days {
     width: 142px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .example {
+    margin-top: 220px;
+    background-color: $cat-grey;
+    padding: $desktop-margin;
+    padding-bottom: 79px;
+  }
+
+  .example__wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+  }
+
+  .example__show {
+    background-color: $cat-grey;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .example__text {
+    margin-right: 175px;
+    margin-bottom: 57px;
+  }
+
+  .before-after {
+    width: 50%;
+  }
+
+  .example__table {
+    margin-bottom: unset;
+  }
+
+  .example__table tbody {
+    width: 365px;
+    flex-direction: column;
+  }
+
+  .example__row {
+    width: 100%;
+  }
+
+  .example__expenses {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .example__cost {
+    margin-top: 60px;
+    width: 100%;
+    text-align: left;
+  }
+
+  .example__cost-value {
+    padding-left: 64px;
+  }
+
+  .example__description {
+    background-color: $cat-grey;
   }
 }
