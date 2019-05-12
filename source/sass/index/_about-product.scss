@@ -1,6 +1,7 @@
 .about-product {
   margin: 0 20px;
   padding: 0;
+  padding-bottom: 21px;
 }
 
 .about-product__title {
@@ -9,12 +10,16 @@
   font-weight: 400;
   line-height: 60px;
   color: #111111;
+  padding: 0;
+  padding-bottom: 29px;
+  margin: 0;
 }
 
 .about-product__text {
   position: relative;
   margin: 0;
   padding: 0;
+  padding-top: 2px;
 }
 
 .about-product__list-item {
@@ -46,7 +51,7 @@
 
   &--water::after {
     position: absolute;
-    top: 5px;
+    top: 3px;
     left: 5px;
     width: 60px;
     height: 60px;
@@ -57,8 +62,8 @@
 
   &--tools::after {
     position: absolute;
-    top: 5px;
-    left: 5px;
+    top: 4px;
+    left: 4px;
     width: 60px;
     height: 60px;
     background: url("../img/advantage-dining@1x.png");

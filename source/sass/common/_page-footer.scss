@@ -9,8 +9,8 @@
 .page-footer__logo {
   text-align: center;
   display: block;
-  margin-top: 39px;
-  margin-bottom: 31px;
+  margin-top: 37px;
+  margin-bottom: 28px;
 }
 
 .page-footer__wrapper {
@@ -32,26 +32,18 @@
   color: #444444;
 }
 
+.page-footer__copyright svg {
+
+  &:hover{
+    fill: $cat-green;
+  }
+}
+
 .copyright__author {
   font-size: 16px;
   line-height: 16px;
   text-decoration: none;
   color: #444444;
-}
-
-.copyright__logo {
-  width: 30px;
-  height: 30px;
-
-  path {
-    fill: #666666;
-  }
-
-  &:hover {
-    path {
-      fill: $link-green;
-    }
-  }
 }
 
 @media (min-width: $tablet-width) {

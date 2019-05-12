@@ -9,11 +9,15 @@
 
 .social {
   display: flex;
-  width: 125px;
-  justify-content: space-between;
+  width: 135px;
+  justify-content: flex-start;
   align-items: center;
-  padding-top: 39px;
-  padding-bottom: 31px;
+  padding-top: 21px;
+  padding-bottom: 17px;
+}
+
+.social__item {
+  margin-right: 38.5px;
 }
 
 .st0 {
@@ -21,14 +25,10 @@
 }
 
 .social__link {
-  path {
-    fill: #666666;
-  }
+  fill: #666666;
 
   &:hover {
-    path {
-      fill: $link-green;
-    }
+    fill: $link-green;
 
     .st0 {
       fill: $link-green;

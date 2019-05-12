@@ -35,12 +35,6 @@
   text-align: center;
 }
 
-.page-header__wrapper {
-  display: block;
-  padding-top: 11px;
-  padding-bottom: 16px;
-}
-
 @media (min-width: $tablet-width) {
   .main-nav {
     display: block;
@@ -73,7 +67,7 @@
 
   .main-nav__link--active {
     border-bottom: 2px solid $cat-green;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
   }
 }
 
