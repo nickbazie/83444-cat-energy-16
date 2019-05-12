@@ -5,6 +5,32 @@
     <title>HTML Academy: Кэт энерджи - Каталог</title>
     <link rel="stylesheet" href="css/style.min.css">
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- Pixel Glass -->
+    <style>
+        html {
+          background-repeat: no-repeat;
+          background-position: 50% 0;
+          /* По умолчанию показывается мобильный макет */
+          background-image: url("img/cat-energy-catalog-mobile.jpg");
+        }
+        /* Планшет */
+        @media (min-width: 768px) {
+          html {
+            /* Планшетный макет */
+            background-image: url("img/cat-energy-catalog-tablet.jpg");
+          }
+        }
+        /* Десктоп */
+        @media (min-width: 1200px) {
+          html {
+            /* Десктопный макет */
+            background-image: url("img/cat-energy-catalog-desktop.jpg");
+          }
+        }
+      </style>
+      <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
+      <script src="../node_modules/pixel-glass/script.js"></script>
+      <!-- // Pixel Glass -->
   </head>
   <body>
     <div style="display:none">
