@@ -1,5 +1,7 @@
 .cat-target {
+  padding-bottom: 8px;
   border-bottom: 1px solid #ededed;
+  margin-bottom: 29px;
 }
 
 .cat-target__label {
@@ -8,18 +10,20 @@
   display: block;
   cursor: pointer;
   padding-left: 46px;
+  padding-top: 6px;
+  margin: 2px 20px 0 20px;
 }
 
 .cat-target__input + .cat-target__label::before {
   content: "";
 
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   left: 0;
 
-  width: 30px;
-  height: 30px;
+  width: 28px;
+  height: 28px;
   border: 1px solid #cdcdcd;
   border-radius: 50%;
 }
@@ -28,11 +32,11 @@
   content: "";
 
   position: absolute;
-  top: 50%;
+  top: 40%;
   transform: translateY(-50%);
   left: 10px;
-  width: 12px;
-  height: 12px;
+  width: 11px;
+  height: 11px;
   background: #68b738;
   border-radius: 50%;
 }
